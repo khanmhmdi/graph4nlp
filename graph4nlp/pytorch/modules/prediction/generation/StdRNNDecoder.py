@@ -431,7 +431,7 @@ class StdRNNDecoder(RNNDecoderBase):
         # decoder_state[0].expand()
         # Define a target mask
         tgt_mask = self.create_target_mask(target_len).to(graph_node_embedding.device)
-        decoder_state = decoder_state[0].to(graph_node_embedding.device)
+        decoder_state = decoder_state.to(graph_node_embedding.device)
 
         # Apply linear transformation
         a = nn.Linear(self.decoder_hidden_size, target_len * 512)
