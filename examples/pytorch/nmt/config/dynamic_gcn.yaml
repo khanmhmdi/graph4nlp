@@ -27,8 +27,8 @@ graph_construction_args:
     sparsity_ratio: 0.1
 
 graph_initialization_args:
-  input_size: 300
-  hidden_size: 300
+  input_size: 512
+  hidden_size: 512
   word_dropout: 0.2
   rnn_dropout: 0.3
   fix_bert_emb: false
@@ -43,9 +43,9 @@ graph_initialization_args:
 graph_embedding_args:
   graph_embedding_share:
     num_layers: 3
-    input_size: 300
-    hidden_size: 300
-    output_size: 300
+    input_size: 512
+    hidden_size: 512
+    output_size: 512
     direction_option: "bi_fuse"
     feat_drop: 0.2
 
